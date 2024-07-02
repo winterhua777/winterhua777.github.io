@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Winter Hua | UCLA Computer Science</title>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+    }
+
+    .image {
+      display: block;
+      width: 200px;
+      height: 200px;
+      transition: 0.3s;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    .image-container:hover .image {
+      filter: brightness(70%);
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>WINTER HUA</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="assets/resources/resume.pdf" class="nav-link">Resume</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="assets/images/derek-new.png" alt="derek-hua" loading="lazy" class="hero-img" />
+    <div class="bio">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Hi there, I'm Winter! I'm super passionate about building and creating meaningful solutions.
+        I just finished my undergrad in Computer Engineering at UCLA and next year I'll be attending UCLA for my Master in Computer Science.
+        I have 3 years of Machine Learning experience through UCLA's Networked and Embedded Systems Laboratory along with industry experience at Abbott Diabetes Care and Lockheed Martin.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <div class="image-container">
+          <img src="assets/icons/c++-logo.png" alt="" loading="lazy" class="image" />
+          <div class="overlay">
+            <p>C++</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="assets/icons/python-logo.png" alt="" loading="lazy" class="image" />
+          <div class="overlay">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="assets/icons/tensorflow-logo.png" alt="" loading="lazy" class="image" />
+          <div class="overlay">
+            <p>Tensorflow</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <div class="image-container">
+          <img src="assets/icons/node-logo.svg" alt="" loading="lazy" class="image" />
+          <div class="overlay">
+            <p>Node.js</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="image" />
+          <div class="overlay">
+            <p>React</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="assets/icons/pytorch-logo.png" alt="" loading="lazy" class="image" />
+          <div class="overlay">
+            <p>PyTorch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <a href="https://github.com/derekhua777/mirror-me">
+          <img src="assets/images/mirrorme.png" alt="Mirror Me" loading="lazy" class="project-pic" />
+          <h3 class="project-title">Mirror Me</h3>  
+        </a>
+        <p class="project-details">
+          MirrorMe simulates an in person learning experience for physical movements, leveraging computer vision and IoT devices to provide real-time, personalized feedback.
+        </p>
+      </div>
+      <div class="project-container project-card">
+        <iframe src="https://www.youtube.com/embed/b-5nav3Fi78" allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" loading="lazy"
+          class="project-video"></iframe>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3560905.3568504">
+          <h3 class="project-title">Capricorn: RF-Vision Sensor Fusion</h3> 
+        </a> 
+        <p class="project-details">
+          Capricorn is a real-time system that merges video analysis and wireless vibrometry to detect internal states of objects with RF signals, offering enhanced scene understanding and enabling accurate monitoring of appliances and vital signs.
+        </p>
+      </div>
+
+
+      <div class="project-container project-card">
+        <a href="https://devpost.com/software/openfridge">
+          <img src="assets/images/openfridge.jpg" alt="OpenFridge" loading="lazy" class="project-pic" />
+          <h3 class="project-title">OpenFridge</h3>
+        </a>
+        <p class="project-details">
+          OpenFridge won the environment track at IdeaHacks2023, the largest hardware hackathon in the west coast. I
+          designed and coded the module assembly attatched to the fridge, creating a portable solution for food waste in
+          communities.
+        </p>
+      </div>
+    </div>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <iframe src="https://www.youtube.com/embed/um1UPxTg5Pk" allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" loading="lazy"
+          class="project-video"></iframe>
+          
+        <h3 class="project-title">Person Tracking Digital Twin</h3>
+        <p class="project-details">
+          We created multimodal sensor fusion nodes on edge devices.
+          These nodes combined LiDAR, camera, and microphone sensors with ROS to
+          form a digital twin.
+        </p>
+      </div>
+      
+
+      <div class="project-container project-card">
+        <iframe src="https://www.youtube.com/embed/VDc1nMU9vqI" allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" loading="lazy"
+          class="project-video"></iframe>
+
+        <h3 class="project-title">Micromouse - Maze Solving Robot</h3>
+        <p class="project-details">
+          We created a custom PCB chasis and designed a maze solving algorithm leveraging IR sensors and encoders for the control system.
+          The design recieved the judges choice award.
+        </p>
+      </div>
+      <div class="project-container project-card">
+        <a href="https://bruinfessions-e55f6.web.app/">
+          <img src="assets/images/bruinfessions.png" alt="bruinfessions" loading="lazy" class="project-pic" />
+          <h3 class="project-title">Bruinfessions - Anonymous Confessions App</h3>
+        </a>
+        <p class="project-details">
+          Bruinfessions is a web app allowing UCLA students to post confessions.
+          The site has like, favorite, search, sort, and post features.
+          The backend is built using Firebase and users are authenticated with Google OAuth.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <!--section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+    </section-->
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="mailto: winterhua777@gmail.com" target="_blank"><img src="assets/icons/gmail-animation.gif" alt="Email"
+      class="socicon" /></a>
+    <a href="https://www.linkedin.com/in/derek-hua-49973b8b/" target="_blank"><img
+        src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://github.com/derekhua777" target="_blank"><img src="assets/icons/icons8-github.gif"
+        alt="Github" loading="lazy" class="socicon" /></a>
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+      alt="" /></i>
+
+  <!-- Footer section -->
+  <footer>
+    <!--
+      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://twitter.com/koladechris" target="_blank"
+          >Kolade Chris (Ksound)</a
+        >
+      </p>
+    -->
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
